@@ -25,8 +25,8 @@ app.post('/create-bill', async (req, res) => {
         formData.append('billPriceSetting', '1');
         formData.append('billPayorInfo', '1');
         formData.append('billAmount', Math.round(amount * 100)); // Converts RM to cents
-        formData.append('billReturnUrl', 'http://localhost:5173/success');
-        formData.append('billCallbackUrl', 'http://localhost:5173/callback');
+        formData.append('billReturnUrl', 'https://street-hq.vercel.app/success');
+        formData.append('billCallbackUrl', 'https://street-hq.vercel.app/callback');
         formData.append('billExternalReferenceNo', `ORDER-${Date.now()}`);
         formData.append('billTo', name);
         formData.append('billEmail', email);
