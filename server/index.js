@@ -52,5 +52,5 @@ app.post('/create-bill', async (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-    console.log(`Secure server running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
